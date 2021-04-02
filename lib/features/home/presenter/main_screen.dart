@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:msglow/component/widget/app_style.dart';
 import 'package:msglow/features/home/presenter/home_screen.dart';
+import 'package:msglow/features/profile/presenter/profile_screen.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -56,8 +57,13 @@ class _MainScreenState extends State<MainScreen> {
   );
 
   Widget _bodyContent() => IndexedStack(
+    index: _currentTabIndex,
     children: [
-      HomeScreen(globalScaffoldKey: _globalScaffoldKey,)
+      HomeScreen(globalScaffoldKey: _globalScaffoldKey),
+      Center(child: Text("Page not found")),
+      Center(child: Text("Page not found")),
+      Center(child: Text("Page not found")),
+      ProfileScreen(),
     ],
   );
 
