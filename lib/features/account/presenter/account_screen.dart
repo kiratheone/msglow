@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:msglow/component/widget/app_style.dart';
 import 'package:msglow/component/widget/simple_menu.dart';
 
-class ProfileScreen extends StatefulWidget {
+class AccountScreen extends StatefulWidget {
   @override
-  _ProfileScreenState createState() => _ProfileScreenState();
+  _AccountScreenState createState() => _AccountScreenState();
 }
 
-class _ProfileScreenState extends State<ProfileScreen> {
+class _AccountScreenState extends State<AccountScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
