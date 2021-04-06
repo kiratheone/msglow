@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:msglow/component/widget/app_style.dart';
 import 'package:msglow/features/home/presenter/home_screen.dart';
 import 'package:msglow/features/account/presenter/account_screen.dart';
+import 'package:msglow/features/shopping/presenter/cart/cart_screen.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -61,7 +62,7 @@ class _MainScreenState extends State<MainScreen> {
     children: [
       HomeScreen(globalScaffoldKey: _globalScaffoldKey),
       Center(child: Text("Page not found")),
-      Center(child: Text("Page not found")),
+      CartScreen(),
       Center(child: Text("Page not found")),
       AccountScreen(),
     ],

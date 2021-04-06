@@ -22,7 +22,7 @@ class ProductType1 extends StatelessWidget {
       width: width,
       child: Card(
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: AppStyle.borderRadiusSmall(),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
