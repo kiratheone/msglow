@@ -18,7 +18,7 @@ class MsGlowAppBar extends StatelessWidget  implements PreferredSizeWidget {
       backgroundColor: Colors.white,
       flexibleSpace: SafeArea(
         child: Container(
-          padding: EdgeInsets.all(24),
+          padding: EdgeInsets.only(top: 24, right: 24, bottom: 24, left: automaticallyImplyLeading ? 48 : 24),
           alignment: Alignment.centerLeft,
           child: Text(title, style: AppStyle.texStyle16Bold(textColor: AppStyle.textColor2)),
         ),
