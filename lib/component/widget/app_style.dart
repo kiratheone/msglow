@@ -29,6 +29,8 @@ class AppStyle {
   static const Color textColor4 = Color(0xFFEA7272);
   static const Color backgroundGray = Color(0xFFC4C4C4);
   static const Color backgroundRed = Color(0xFFBF2520);
+  static const Color accent = Color(0xFF40BFFF);
+  static const Color black72 = Color(0xFF9098B1);
 
   static TextStyle textBody({Color textColor = Colors.black}) {
     return TextStyle(

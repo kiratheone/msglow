@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:msglow/component/app_route.dart';
 import 'package:msglow/component/widget/app_style.dart';
 import 'package:msglow/component/widget/simple_menu.dart';
 
@@ -25,7 +26,7 @@ class _AccountScreenState extends State<AccountScreen> {
         child: SimpleMenu(
           icon: Icons.person_outline,
           title: "Profile",
-          onTap: (){},
+          onTap: () => Navigator.pushNamed(context, AppRoute.profileScreen),
           textColor: AppStyle.textColor2,
         ),
       ),

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:msglow/features/account/presenter/profile_screen.dart';
 import 'package:msglow/features/auth/presenter/login/login_screen.dart';
 import 'package:msglow/features/auth/presenter/register/register_screen.dart';
 import 'package:msglow/features/home/presenter/main_screen.dart';
@@ -15,6 +16,7 @@ class AppRoute {
   static const String otpScreen = 'otpScreen';
   static const String homeScreen = 'homeScreen';
   static const String searchScreen = 'searchScreen';
+  static const String profileScreen = 'profileScreen';
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch(settings.name){
 
@@ -32,6 +34,9 @@ class AppRoute {
 
       case searchScreen:
         return MaterialPageRoute(builder: (_) => SearchScreen());
+
+      case profileScreen:
+        return MaterialPageRoute(builder: (_) => ProfileScreen());
 
       default:
         return MaterialPageRoute(
